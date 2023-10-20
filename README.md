@@ -48,13 +48,5 @@ This is a parking lot management system that allows users to reserve parking spa
 - **POST '/payments/pay':** pay space usage bill
 
 
-# Workflow
-
-### User
-![user activity diagram](docs/workflow/ParkiT-workflow-User.png)
-
-
-### Reservation
-![reservation activity diagram](docs/workflow/ParkiT-workflow-User.png)
 
   
