@@ -5,10 +5,6 @@ by Team Sahid
 
 ## Introduction 
 
-This is a parking lot management system that allows users to reserve parkin# ParkiT
-
-## Introduction 
-
 This is a parking lot management system that allows users to reserve parking space in nearby parking lots and pay upon checkout. The system also provides analytics of the parking lot usage.
 
 
