@@ -1,7 +1,7 @@
 # Smart-Parking-System-
 To build a Smart parking System 
 by Team Sahid
-# ParkiT
+# Smart Parking using IoT
 
 ## Introduction 
 
