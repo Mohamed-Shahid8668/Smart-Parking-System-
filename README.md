@@ -1,48 +1,32 @@
-# Smart-Parking-System-
-To build a Smart parking System 
-by Team Sahid
-# Smart Parking using IoT
+# IoT based Smart Parking System 
 
-## Introduction 
+## Problem Statement
+As the population has been increasing tremendously, vehicular traffic and its parking has become an issue of great concern. In public places where there are many visitors, a lot of time is wasted for searching parking slots. Also, a lot of manual labour is required to look after the existing parking arrangement. Moreover, there is no way of knowing whether a vacant parking space is available or not. The smart parking system is going to be implemented in several countries. In India, this type of parking system is most likely to be implemented in Bangalore in the near future. 
 
-This is a parking lot management system that allows users to reserve parking space in nearby parking lots and pay upon checkout. The system also provides analytics of the parking lot usage.
+## Proposed Solution
+The given automatic parking system which is safe, speedy, user-friendly and cost-effective includes the following features:
+* Automated parking system without any manual labour
+*	Simultaneous operations on different floors for car parking
+*	Multiple entry and exit points
+* Pre-booking of parking slots through a mobile App
+* Categorization of vehicles by size and weight based on which the driver will be given a place to park the car. In this way, heavy and larger vehicles can be given a parking space on the Ground floor for convenience. 
 
+## Basic Components and Softwares used
+* STM32103C to be used as the microcontroller
+* Ultrasonic Sensors to detect the presence of a vehicle near entry or exit
+* IR Sensors to detect occupancy in each parking space
+* Servo motors to be used as shafts 
+* Arduino IDE for firmware development
+* Thunkable Classic for Android App development 
+* Anaconda-OpenCV Python for Image Processing and weight detection
+* LCD Nokia 5110
 
-## Features
+## Working
+When a vehicle arrives in front of UV sensor it sends a signal to servo motor which rotates 90 degrees up and allows the car to enter inside. Once the capacity of the system is full no more vehicle is allowed inside.The exit and entry system work simultaneously with the help of a counter which increments or decrements as a vehicle enters or leaves the parking slot. The IR sensors help to identify filled and empty spaces.   
 
-- **Account:** Users can create an account, verify sign up and sign in.
-- **Authorization:** User authorization system with JWT-based token
-- **Reservation:** Users can view the available parking spaces and reserve a space.
-- **Garage:** Users can view nearby parking lots
-- **Payment:** Integration with Stripe API for secure payments processing.
-- **Analytics:**  Analytics and insights into parking usage, trends and patterns using Elasticsearch and Kibana.   
-- **Directions:** Real-time location tracking on the frontend using Google Maps and Location API to help users find reserved parking spaces easily.
-
-
-## Technologies Used
-
-- Node.js
-- Express.js
-- MongoDB
-- Elasticsearch & Kibana
-- Stripe API
-
-
-## API Endpoints
-
-- **POST '/user/signin':** create new user account
-- **POST '/user/signup':** log in to an existing user account
-- **POST '/user/verify-mail':** verify user account/email after sign-up
-- **POST '/user/reverify-mail':** resend verification email to user
-- **GET '/garage':** get a list of all parking lots
-- **GET '/garage/nearby':** get the most nearest parkin lot
-- **GET '/garage/nearby/spaces':** fetch all available parking spaces in a parking lot
-- **POST '/reservation/reserve':** reserve a space
-- **POST '/reservation/check-in':** check into a reserved space
-- **POST '/reservation/check-out':** calculate bill and checkout
-- **POST '/reservation/exit':** open locks to exit reserved space
-- **POST '/payments/pay':** pay space usage bill
+![image](https://user-images.githubusercontent.com/61982410/137719407-fe4ac4f0-0799-4db9-baa5-253ec5349371.png)
 
 
 
-  
+
+
